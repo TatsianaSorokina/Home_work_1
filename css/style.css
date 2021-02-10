@@ -27,13 +27,6 @@ p {
 }
 
 .logo {
-    font-family: Revalia;
-    font-size: 48px;
-    font-weight: 400;
-    
-}
-
-.logo a {
     text-decoration: none; 
     color: #34547A;
 }
@@ -257,7 +250,7 @@ p {
     transition: .8s opacity;
 }
 
-.gallery:hover img:hover {
+.gallery:hover img:hover { 
     opacity: 1;
     transition: .8s opacity;
 }
@@ -378,7 +371,7 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-.author {/*как выставить пр центру?*/
+.author {
     display: inline-block;
 }
 
