@@ -238,31 +238,44 @@ p {
 /*gallery*/
 
 .gallery {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-flow: row wrap;
-}
-
-.gallery:hover img {
-    opacity: 0.3;
-    transition: .8s opacity;
-}
-
-.gallery:hover img:hover { 
-    opacity: 1;
-    transition: .8s opacity;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .list {
-    width: 379px;
+    position: relative;
+    padding: 0 0 85% 0;
 }
 
 .list img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.descr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(52, 84, 122, .8);
+    opacity: 0;
+    -webkit-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
+    text-align: left;
+}
+
+.descr img {
+    min-width: 100%;
+}
+
+.list:hover .descr {
+    opacity: 1;
 }
 
 
